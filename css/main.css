@@ -1898,7 +1898,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #96f45d;
+  background: #3d039e;
 }
 .site-author-image {
   display: block;
@@ -3023,6 +3023,6 @@ ul.breadcrumb li+li:last-child {
 }
 #weather-float-he {
   position: absolute !important;
-  top: 44px !important;
-  right: 144px !important;
+  top: 8% !important;
+  right: 50% !important;
 }
