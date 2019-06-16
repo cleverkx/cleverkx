@@ -1898,7 +1898,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f5f;
+  background: #96f45d;
 }
 .site-author-image {
   display: block;
@@ -3020,4 +3020,9 @@ ul.breadcrumb li+li:last-child {
 }
 :active {
   cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
+}
+#weather-float-he {
+  position: absolute !important;
+  top: 44px !important;
+  right: 144px !important;
 }
