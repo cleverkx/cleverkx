@@ -6,7 +6,7 @@
   <link href="/cleverkx/atom.xml" rel="self"/>
   
   <link href="https://github.com/cleverkx/"/>
-  <updated>2019-07-02T03:25:26.927Z</updated>
+  <updated>2019-07-03T11:00:01.348Z</updated>
   <id>https://github.com/cleverkx/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>同源和跨域</title>
+    <link href="https://github.com/cleverkx/2019/07/03/%E5%90%8C%E6%BA%90%E5%92%8C%E8%B7%A8%E5%9F%9F/"/>
+    <id>https://github.com/cleverkx/2019/07/03/同源和跨域/</id>
+    <published>2019-07-03T10:55:00.000Z</published>
+    <updated>2019-07-03T11:00:01.348Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cleverkx\assets\css\APlayer.min.css"><script src="\cleverkx\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、同源"><a href="#一、同源" class="headerlink" title="一、同源"></a>一、同源</h1><p>同源策略是浏览器的一种安全策略，所谓同源是指   域名，协议，端口完全相同</p><h1 id="二、跨域"><a href="#二、跨域" class="headerlink" title="二、跨域"></a>二、跨域</h1><h2 id="1-什么是跨域"><a href="#1-什么是跨域" class="headerlink" title="1.什么是跨域"></a>1.什么是跨域</h2><p>简单来说，不同源即跨域。域名，协议，端口有一项不同即跨域，如果只是目录不同，不算跨域。<br>允许跨域的标签：img,link,src,href.<br>跨域不是请求没有发出去，而是发出去之后，服务器也响应了，但是返回的数据被浏览器默认拦截了</p><h2 id="2-跨域解决方案"><a href="#2-跨域解决方案" class="headerlink" title="2.跨域解决方案"></a>2.跨域解决方案</h2><h3 id="1-服务器端跨域CORS"><a href="#1-服务器端跨域CORS" class="headerlink" title="1.服务器端跨域CORS"></a>1.服务器端跨域CORS</h3><pre><code>在请求的php文件中设置响应头：  header(&quot;Access-Control-Allow-Origin:*&quot;) 允许所有其他域向当前域发送请求。  header(&quot;Access-Control-Allow-Origin:http://www.aa.com&quot;) 允许指定的域向当前域发送请求。  不常用，服务器一般不允许这样设置</code></pre><h3 id="2-JSONP跨域方案"><a href="#2-JSONP跨域方案" class="headerlink" title="2.JSONP跨域方案"></a>2.JSONP跨域方案</h3><h4 id="1-JSONP原理（原生方法）"><a href="#1-JSONP原理（原生方法）" class="headerlink" title="1)JSONP原理（原生方法）"></a>1)JSONP原理（原生方法）</h4><ul><li><p>前台修改：<br>  其本质是利用了<script src></script>标签的src具有可跨域性，将操作数据的函数test拼接为callback的值</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">let</span> test = <span class="function"><span class="params">data</span> =&gt;</span> <span class="built_in">console</span>.log(data)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;script src="http:/</span><span class="regexp">/comm2.com/i</span>ndex.php?callback=test<span class="string">"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>后台处理:<br>  服务端返回一个预先定义好的javaScript函数的调用，并且将服务器数据以该函数参数的形式传递过来</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$callback = $_GET[<span class="string">"callback"</span>];</span><br><span class="line">$data=file_get_contents(<span class="string">"data.json"</span>);</span><br><span class="line"><span class="keyword">echo</span> $callback.<span class="string">"("</span>.$data.<span class="string">")"</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></li></ul><p>此方法只能以GET方式请求</p><h4 id="2-jquery使用JSONP跨域的步骤"><a href="#2-jquery使用JSONP跨域的步骤" class="headerlink" title="2)jquery使用JSONP跨域的步骤"></a>2)jquery使用JSONP跨域的步骤</h4><ul><li>前台修改：在ajax请求里设置dataType为jsonp，这一步骤本质将上面的原理封装好了，直接可以开启跨域请求<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">  type:<span class="string">'get'</span>,</span><br><span class="line">  dataType:<span class="string">'jsonp'</span>,</span><br><span class="line">  url:<span class="string">'http://comm2.com/index.php'</span>,</span><br><span class="line">  success: <span class="function"><span class="params">data</span> =&gt;</span> <span class="built_in">console</span>.log(data)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li></ul><p>这种后台直接给前台请求的返回值，无需前台传数据</p><h3 id="3-反向代理服务器跨域方案"><a href="#3-反向代理服务器跨域方案" class="headerlink" title="3.反向代理服务器跨域方案"></a>3.反向代理服务器跨域方案</h3><p>反向代理其实就是，前端人员配置个代理服务器来接受客户端的请求，然后将请求发给真正的服务器，真正的做处理的服务器将处理结果返回给代理服务器，代理服务器再将结果发送给客户端。此方法利用的就是服务器与服务器之间不存在跨域的特性。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cleverkx\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cleverkx\assets\js\A
+      
+    
+    </summary>
+    
+      <category term="同源和跨域" scheme="https://github.com/cleverkx/categories/%E5%90%8C%E6%BA%90%E5%92%8C%E8%B7%A8%E5%9F%9F/"/>
+    
+    
+      <category term="同源" scheme="https://github.com/cleverkx/tags/%E5%90%8C%E6%BA%90/"/>
+    
+      <category term="跨域" scheme="https://github.com/cleverkx/tags/%E8%B7%A8%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>nodeJs介绍和ES6语法</title>
-    <link href="https://github.com/cleverkx/2019/07/02/node.js%E7%9A%84%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://github.com/cleverkx/2019/07/02/node.js的简单介绍/</id>
+    <link href="https://github.com/cleverkx/2019/07/02/nodeJs%E4%BB%8B%E7%BB%8D%E5%92%8CES6%E8%AF%AD%E6%B3%95/"/>
+    <id>https://github.com/cleverkx/2019/07/02/nodeJs介绍和ES6语法/</id>
     <published>2019-07-02T03:30:00.000Z</published>
     <updated>2019-07-02T03:25:26.927Z</updated>
     
