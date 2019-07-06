@@ -1898,7 +1898,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f9ffff;
+  background: #b9de0f;
 }
 .site-author-image {
   display: block;
@@ -3025,4 +3025,7 @@ ul.breadcrumb li+li:last-child {
   position: fixed !important;
   top: 8% !important;
   right: 11% !important;
+}
+.post-footer {
+  display: none !important;
 }
