@@ -107,14 +107,18 @@
 
 
 
-  <meta name="keywords" content="前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="kongx">
-<meta property="og:url" content="https://github.com/cleverkx/archives/index.html">
+  <meta name="description" content="1. Git基础1.1 版本管理1.1.1 什么是版本管理版本管理是一种记录文件变化的方式，以便将来查阅特定版本的文件内容。 1.1.2 人为维护文档版本的问题 文档数量多且命名不清晰导致文档版本混乱  每次编辑文档需要复制，不方便  多人同时编辑同一个文档，容易产生覆盖   1.2 Git 是什么Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git的基本安装和使用">
+<meta property="og:url" content="https://github.com/cleverkx/2019/06/03/git的基本安装和使用/index.html">
 <meta property="og:site_name" content="kongx">
+<meta property="og:description" content="1. Git基础1.1 版本管理1.1.1 什么是版本管理版本管理是一种记录文件变化的方式，以便将来查阅特定版本的文件内容。 1.1.2 人为维护文档版本的问题 文档数量多且命名不清晰导致文档版本混乱  每次编辑文档需要复制，不方便  多人同时编辑同一个文档，容易产生覆盖   1.2 Git 是什么Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-07-13T12:46:27.968Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kongx">
+<meta name="twitter:title" content="git的基本安装和使用">
+<meta name="twitter:description" content="1. Git基础1.1 版本管理1.1.1 什么是版本管理版本管理是一种记录文件变化的方式，以便将来查阅特定版本的文件内容。 1.1.2 人为维护文档版本的问题 文档数量多且命名不清晰导致文档版本混乱  每次编辑文档需要复制，不方便  多人同时编辑同一个文档，容易产生覆盖   1.2 Git 是什么Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也">
 
 
 
@@ -124,7 +128,7 @@
 
   
   
-  <link rel="canonical" href="https://github.com/cleverkx/archives/">
+  <link rel="canonical" href="https://github.com/cleverkx/2019/06/03/git的基本安装和使用/">
 
 
 
@@ -134,7 +138,7 @@
   };
 </script>
 
-  <title>归档 | kongx</title>
+  <title>git的基本安装和使用 | kongx</title>
   
 
 
@@ -187,7 +191,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"><a href="https://cleverkx.github.io/cleverkx/" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></div>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -279,7 +283,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -350,206 +354,374 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cleverkx/cleverkx/2019/06/03/git的基本安装和使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kongx">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/cleverkx/images/wapkq.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kongx">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">git的基本安装和使用
+
+              
+            
+          </h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-03 20:20:00" itemprop="dateCreated datePublished" datetime="2019-06-03T20:20:00+08:00">2019-06-03</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-13 20:46:27" itemprop="dateModified" datetime="2019-07-13T20:46:27+08:00">2019-07-13</time>
+              
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
-      
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/cleverkx/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a></span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="1-Git基础"><a href="#1-Git基础" class="headerlink" title="1. Git基础"></a>1. Git基础</h2><h3 id="1-1-版本管理"><a href="#1-1-版本管理" class="headerlink" title="1.1 版本管理"></a>1.1 版本管理</h3><h4 id="1-1-1-什么是版本管理"><a href="#1-1-1-什么是版本管理" class="headerlink" title="1.1.1 什么是版本管理"></a>1.1.1 什么是版本管理</h4><p>版本管理是一种记录文件变化的方式，以便将来查阅特定版本的文件内容。</p>
+<h4 id="1-1-2-人为维护文档版本的问题"><a href="#1-1-2-人为维护文档版本的问题" class="headerlink" title="1.1.2 人为维护文档版本的问题"></a>1.1.2 人为维护文档版本的问题</h4><ol>
+<li><p>文档数量多且命名不清晰导致文档版本混乱</p>
+</li>
+<li><p>每次编辑文档需要复制，不方便</p>
+</li>
+<li><p>多人同时编辑同一个文档，容易产生覆盖</p>
+</li>
+</ol>
+<h3 id="1-2-Git-是什么"><a href="#1-2-Git-是什么" class="headerlink" title="1.2 Git 是什么"></a>1.2 Git 是什么</h3><p>Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也可以在任何时间点，将更新记录恢复回来。</p>
+<h3 id="1-3-Git-安装"><a href="#1-3-Git-安装" class="headerlink" title="1.3 Git 安装"></a>1.3 Git 安装</h3><p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载地址</a> </p>
+<p>在安装的过程中，所有选项使用默认值即可。</p>
+<h3 id="1-4-Git-基本工作流程"><a href="#1-4-Git-基本工作流程" class="headerlink" title="1.4 Git 基本工作流程"></a>1.4 Git 基本工作流程</h3><table>
+<thead>
+<tr>
+<th>git仓库</th>
+<th>暂存区</th>
+<th>工作目录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用于存放提交记录</td>
+<td>临时存放被修改文件</td>
+<td>被Git管理的项目目录</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-5-Git-的使用"><a href="#1-5-Git-的使用" class="headerlink" title="1.5 Git 的使用"></a>1.5 Git 的使用</h3><h4 id="1-5-1-Git-使用前配置"><a href="#1-5-1-Git-使用前配置" class="headerlink" title="1.5.1 Git 使用前配置"></a>1.5.1 Git 使用前配置</h4><p>在使用 git 前，需要告诉 git 你是谁，在向 git 仓库中提交时需要用到。</p>
+<ol>
+<li>配置提交人姓名：<code>git config --global user.name 提交人姓名</code></li>
+<li>配置提交人姓名：<code>git config --global user.email 提交人邮箱</code> </li>
+<li>查看git配置信息：<code>git config --list</code>   </li>
+</ol>
+<p><strong>注意</strong></p>
+<ol>
+<li><p>如果要对配置信息进行修改，重复上述命令即可。</p>
+</li>
+<li><p>配置只需要执行一次。</p>
+</li>
+</ol>
+<h4 id="1-5-2-提交步骤（重要）"><a href="#1-5-2-提交步骤（重要）" class="headerlink" title="1.5.2 提交步骤（重要）"></a>1.5.2 提交步骤（重要）</h4><ol>
+<li><code>git init</code> 初始化git仓库 （只需要一次就行）</li>
+<li><code>git status</code> 查看文件状态</li>
+<li><code>git add 文件列表//add后加.表示上传所有文件</code> 追踪文件</li>
+<li><code>git commit -m 提交信息//提交的信息就是你更新的上传的日常更改备注</code>  向仓库中提交代码//</li>
+<li><code>git log</code> 查看提交记录</li>
+</ol>
+<h4 id="1-5-2-（每次提交必须要做的事）"><a href="#1-5-2-（每次提交必须要做的事）" class="headerlink" title="1.5.2 （每次提交必须要做的事）"></a>1.5.2 （每次提交必须要做的事）</h4><ol>
+<li>git add .       添加要提交的文件</li>
+<li>git commit -m ‘登录功能完成’  提交到仓库</li>
+<li>git remote add origin <a href="https://gitee.com/xx/xx.git" target="_blank" rel="noopener">https://gitee.com/xx/xx.git</a>  给地址取个名字叫 origin</li>
+<li>git push -u origin master   提交到远程仓库(如果配置了ssh公用秘钥第三步就可以不用执行，第四步换成<code>git push ssh地址 master</code>)</li>
+</ol>
+<h4 id="1-5-3-撤销-了解"><a href="#1-5-3-撤销-了解" class="headerlink" title="1.5.3 撤销(了解)"></a>1.5.3 撤销(了解)</h4><ul>
+<li><p>用暂存区中的文件覆盖工作目录中的文件： <code>git checkout 文件</code></p>
+</li>
+<li><p>将文件从暂存区中删除： <code>git rm --cached 文件</code></p>
+</li>
+<li>将 git 仓库中指定的更新记录恢复出来，并且覆盖暂存区和工作目录：<code>git rest --hard commitID</code> </li>
+</ul>
+<h2 id="2-Git进阶"><a href="#2-Git进阶" class="headerlink" title="2. Git进阶"></a>2. Git进阶</h2><h3 id="2-1-分支"><a href="#2-1-分支" class="headerlink" title="2.1 分支"></a>2.1 分支</h3><p>为了便于理解，大家暂时可以认为分支就是当前工作目录中代码的一份副本。</p>
+<p>使用分支，可以让我们从开发主线上分离出来，以免影响开发主线。</p>
+<h4 id="2-1-1-分支命令"><a href="#2-1-1-分支命令" class="headerlink" title="2.1.1 分支命令"></a>2.1.1 分支命令</h4><ul>
+<li><p><code>git branch</code> 查看分支</p>
+</li>
+<li><p><code>git branch 分支名称</code> 创建分支</p>
+</li>
+<li><p><code>git checkout 分支名称</code> 切换分支或者 <code>git checkout -b 分支名称</code> 直接创建并且切换分支</p>
+</li>
+<li><p><code>git merge 来源分支</code> 合并分支 去master执行 合并其他分支</p>
+</li>
+<li><p><code>git branch -d 分支名称</code> 删除分支（分支被合并后才允许删除）（-D 强制删除）</p>
+</li>
+</ul>
+<h3 id="2-2-暂时保存更改"><a href="#2-2-暂时保存更改" class="headerlink" title="2.2 暂时保存更改"></a>2.2 暂时保存更改</h3><p>在git中，可以暂时提取分支上所有的改动并存储，让开发人员得到一个干净的工作副本，临时转向其他工作。</p>
+<p>使用场景：分支临时切换</p>
+<ul>
+<li>存储临时改动：<code>git stash</code></li>
+<li>恢复改动：<code>git stash pop</code></li>
+</ul>
+<h2 id="3-Gitee中国"><a href="#3-Gitee中国" class="headerlink" title="3. Gitee中国"></a>3. Gitee中国</h2><p>这里注册我就不写了。</p>
+<h3 id="3-1-多人协作开发流程"><a href="#3-1-多人协作开发流程" class="headerlink" title="3.1 多人协作开发流程"></a>3.1 多人协作开发流程</h3><ul>
+<li>A在自己的计算机中创建本地仓库</li>
+<li>A在github中创建远程仓库</li>
+<li>A将本地仓库推送到远程仓库</li>
+<li>B克隆远程仓库到本地进行开发</li>
+<li>B将本地仓库中开发的内容推送到远程仓库</li>
+<li>A将远程仓库中的最新内容拉去到本地</li>
+</ul>
+<h3 id="3-2-创建仓库"><a href="#3-2-创建仓库" class="headerlink" title="3.2 创建仓库"></a>3.2 创建仓库</h3><ol>
+<li><p>填写仓库基本信息</p>
+</li>
+<li><p>将本地仓库推送到远程仓库</p>
+<ol>
+<li><p>git push 远程仓库地址 分支名称</p>
+</li>
+<li><p>git push 远程仓库地址别名 分支名称</p>
+</li>
+<li><p>git push -u 远程仓库地址别名 分支名称</p>
+<p> -u 记住推送地址及分支，下次推送只需要输入git push即可</p>
+</li>
+<li><p>git remote add 远程仓库地址别名 远程仓库地址</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="3-3-拉取操作"><a href="#3-3-拉取操作" class="headerlink" title="3.3 拉取操作"></a>3.3 拉取操作</h3><h4 id="3-3-1-克隆仓库"><a href="#3-3-1-克隆仓库" class="headerlink" title="3.3.1 克隆仓库"></a>3.3.1 克隆仓库</h4><p>克隆远端数据仓库到本地：<code>git clone 仓库地址</code></p>
+<h4 id="3-3-2-拉取远程仓库中最新的版本"><a href="#3-3-2-拉取远程仓库中最新的版本" class="headerlink" title="3.3.2 拉取远程仓库中最新的版本"></a>3.3.2 拉取远程仓库中最新的版本</h4><p>拉取远程仓库中最新的版本：<code>git pull 远程仓库地址 分支名称</code></p>
+<h3 id="3-4-解决冲突"><a href="#3-4-解决冲突" class="headerlink" title="3.4 解决冲突"></a>3.4 解决冲突</h3><p>在多人同时开发一个项目时，如果两个人修改了同一个文件的同一个地方，就会发生冲突。冲突需要人为解决。</p>
+<h3 id="3-5-跨团队协作"><a href="#3-5-跨团队协作" class="headerlink" title="3.5 跨团队协作"></a>3.5 跨团队协作</h3><ol>
+<li>程序员 C fork仓库</li>
+<li>程序员 C 将仓库克隆在本地进行修改</li>
+<li>程序员 C 将仓库推送到远程</li>
+<li>程序员 C 发起pull reqest</li>
+<li>原仓库作者审核</li>
+<li>原仓库作者合并代码</li>
+</ol>
+<h3 id="3-6-ssh免登陆"><a href="#3-6-ssh免登陆" class="headerlink" title="3.6 ssh免登陆"></a>3.6 ssh免登陆</h3><p>码云配置ssh文档：<a href="https://gitee.com/help/articles/4181" target="_blank" rel="noopener">https://gitee.com/help/articles/4181</a><br>配置ssh公钥私钥<br>   https协议仓库地址：<a href="https://github.com/itcast-frontEnd/git-demo.git">https://github.com/itcast-frontEnd/git-demo.git</a></p>
+<p>生成秘钥：<code>ssh-keygen</code></p>
+<p>秘钥存储目录：C:\Users\用户\.ssh</p>
+<p>公钥名称：id_rsa.pub</p>
+<p>私钥名称：id_rsa</p>
+<h3 id="3-7-GIT忽略清单"><a href="#3-7-GIT忽略清单" class="headerlink" title="3.7 GIT忽略清单"></a>3.7 GIT忽略清单</h3><p>将不需要被git管理的文件名字添加到此文件中，在执行git命令的时候，git就会忽略这些文件。</p>
+<p>git忽略清单文件名称：<strong>.gitignore</strong></p>
+<p>将工作目录中的文件全部添加到暂存区：<code>git add .</code></p>
+
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+
+    <div>
+    
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+    
+    </div>
+
+    
+
+    
+      
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/cleverkx/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
           </div>
         
-        
 
         
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-          <a class="post-title-link" href="/cleverkx/2019/07/05/基于Node的express框架/" itemprop="url">
-            
-              <span itemprop="name">基于node的express框架</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-05T16:20:00+08:00" content="2019-07-05">
-          07-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/cleverkx/2019/07/03/同源和跨域/" itemprop="url">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span itemprop="name">同源和跨域</span>
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-03T18:55:00+08:00" content="2019-07-03">
-          07-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+              <a href="/cleverkx/2019/07/02/nodeJs介绍和ES6语法/" rel="prev" title="nodeJs介绍和ES6语法">
+                nodeJs介绍和ES6语法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/cleverkx/2019/07/02/nodeJs介绍和ES6语法/" itemprop="url">
-            
-              <span itemprop="name">nodeJs介绍和ES6语法</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-02T11:30:00+08:00" content="2019-07-02">
-          07-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/cleverkx/2019/06/03/git的基本安装和使用/" itemprop="url">
-            
-              <span itemprop="name">git的基本安装和使用</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-03T20:20:00+08:00" content="2019-06-03">
-          06-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-    </div>
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NDY4Mi8yMTIwOA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -569,8 +741,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -739,6 +920,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Git基础"><span class="nav-number">1.</span> <span class="nav-text">1. Git基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-版本管理"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 版本管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-1-什么是版本管理"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1 什么是版本管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-2-人为维护文档版本的问题"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.1.2 人为维护文档版本的问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Git-是什么"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 Git 是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-Git-安装"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 Git 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-Git-基本工作流程"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 Git 基本工作流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-Git-的使用"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 Git 的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-1-Git-使用前配置"><span class="nav-number">1.5.1.</span> <span class="nav-text">1.5.1 Git 使用前配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-2-提交步骤（重要）"><span class="nav-number">1.5.2.</span> <span class="nav-text">1.5.2 提交步骤（重要）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-2-（每次提交必须要做的事）"><span class="nav-number">1.5.3.</span> <span class="nav-text">1.5.2 （每次提交必须要做的事）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-3-撤销-了解"><span class="nav-number">1.5.4.</span> <span class="nav-text">1.5.3 撤销(了解)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Git进阶"><span class="nav-number">2.</span> <span class="nav-text">2. Git进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-分支"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 分支</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-1-分支命令"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.1.1 分支命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-暂时保存更改"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 暂时保存更改</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Gitee中国"><span class="nav-number">3.</span> <span class="nav-text">3. Gitee中国</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-多人协作开发流程"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 多人协作开发流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-创建仓库"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-拉取操作"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 拉取操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-1-克隆仓库"><span class="nav-number">3.3.1.</span> <span class="nav-text">3.3.1 克隆仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-2-拉取远程仓库中最新的版本"><span class="nav-number">3.3.2.</span> <span class="nav-text">3.3.2 拉取远程仓库中最新的版本</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-解决冲突"><span class="nav-number">3.4.</span> <span class="nav-text">3.4 解决冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-跨团队协作"><span class="nav-number">3.5.</span> <span class="nav-text">3.5 跨团队协作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-ssh免登陆"><span class="nav-number">3.6.</span> <span class="nav-text">3.6 ssh免登陆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-GIT忽略清单"><span class="nav-number">3.7.</span> <span class="nav-text">3.7 GIT忽略清单</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -926,6 +1124,10 @@ WIDGET = {FID: 'pKsgTyEbip'}
 
 
   
+  <script src="/cleverkx/js/scrollspy.js?v=7.1.1"></script>
+<script src="/cleverkx/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -941,6 +1143,23 @@ WIDGET = {FID: 'pKsgTyEbip'}
 
   
 
+
+  
+    <script>
+  window.livereOptions = {
+    refer: '2019/06/03/git的基本安装和使用/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
 
 
   
@@ -1285,6 +1504,25 @@ WIDGET = {FID: 'pKsgTyEbip'}
   
 
   
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 19065,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
 
   
 
